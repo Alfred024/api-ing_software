@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15.3
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: db_users
+    ports:
+      - 5432:5432
